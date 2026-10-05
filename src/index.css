@@ -1,0 +1,63 @@
+/* Ajustes minimos sobre Bootstrap 5.
+   La maquetacion y el responsive quedan a cargo del grid de Bootstrap.
+   El @font-face de la fuente Nasalization vive en index.html (no acá),
+   porque necesita la variable %BASE_URL% para funcionar tanto en local
+   como una vez publicado en GitHub Pages. */
+
+.titulo-principal {
+  font-family: 'Nasalization', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* En celulares, ademas de achicar la fuente, reducimos el espaciado
+   entre letras para que el titulo no se corte en el borde de la pantalla. */
+@media (max-width: 576px) {
+  .titulo-principal {
+    font-size: 2.2rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Telefonos muy angostos (320-350px) */
+@media (max-width: 350px) {
+  .titulo-principal {
+    font-size: 1.7rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --s: 200px; /* controla el tamano del patron */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+}
+
+/* Navbar con el mismo tono oscuro del patron de fondo, para consistencia visual */
+.navbar-retro {
+  background-color: var(--c1);
+}
+
+/* Fondo decorativo del header (patron de cubos isometricos con conic-gradient) */
+.header-bienvenida {
+  background-color: var(--c1); /* respaldo si el navegador no soporta conic-gradient */
+  background:
+    repeating-conic-gradient(from 30deg, #0000 0 120deg, var(--c3) 0 50%)
+      calc(var(--s) / 2) calc(var(--s) * tan(30deg) / 2),
+    repeating-conic-gradient(from 30deg, var(--c1) 0 60deg, var(--c2) 0 120deg, var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s) * tan(30deg));
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+}

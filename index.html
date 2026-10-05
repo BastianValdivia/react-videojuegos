@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="%BASE_URL%img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tienda de videojuegos retro con productos destacados y novedades del mundo gamer clásico."
+    />
+    <title>Bastian-RetroZone - Tienda de Videojuegos Retro</title>
+
+    <!--
+      El @font-face va acá, como estilo inline, y no en index.css,
+      porque %BASE_URL% solo se resuelve dentro de index.html (en
+      local vale "/", en producción vale el "base" configurado en
+      vite.config.js). Así la fuente carga bien tanto en local como
+      una vez publicada en la subcarpeta de GitHub Pages.
+    -->
+    <style>
+      @font-face {
+        font-family: 'Nasalization';
+        src: url('%BASE_URL%fonts/nasalization-rg.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
