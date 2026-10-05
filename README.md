@@ -6,11 +6,17 @@ Continúa el proyecto de la Semana 6 (HTML + Bootstrap + JavaScript vanilla), re
 
 > Proyecto con fines académicos. La tienda es ficticia y el botón "Comprar" solo muestra un aviso de tienda cerrada.
 
+## Enlaces
+
+- **Sitio publicado:** <https://bastianvaldivia.github.io/react-videojuegos/>
+- **Repositorio:** <https://github.com/BastianValdivia/react-videojuegos>
+
 ## Tecnologías
 
 - [React 19](https://react.dev/) con [Vite](https://vitejs.dev/)
 - Bootstrap 5 (instalado por npm, no por CDN)
 - `fetch` + Hooks (`useState`, `useEffect`) para cargar datos y manejar errores
+- `gh-pages` para publicar en GitHub Pages
 
 ## Cómo ejecutarlo en local
 
@@ -28,14 +34,36 @@ npm run build
 npm run preview
 ```
 
+## Despliegue en GitHub Pages
+
+El sitio se publica desde la rama `gh-pages`, que contiene solo la carpeta `dist` generada por Vite. La rama `main` guarda el código fuente.
+
+- `vite.config.js` define `base: '/react-videojuegos/'`, porque GitHub Pages sirve el proyecto en una subcarpeta con el nombre del repositorio.
+- El paquete `gh-pages` (dependencia de desarrollo) hace la publicación.
+- Scripts en `package.json`:
+  - `predeploy`: ejecuta `npm run build` automáticamente.
+  - `deploy`: ejecuta `gh-pages -d dist`, que sube `dist` a la rama `gh-pages`.
+
+Para actualizar el sitio después de hacer cambios:
+
+```bash
+git add .
+git commit -m "Descripción del cambio"
+git push
+npm run deploy
+```
+
+En GitHub, en *Settings → Pages*, el origen está configurado como *Deploy from a branch*, rama `gh-pages`, carpeta `/ (root)`.
+
 ## Estructura del proyecto
 
 ```
 react-videojuegos/
 ├── index.html
 ├── public/
-│   ├── img/        
-│   └── fonts/     
+│   ├── img/            # Imágenes de los productos
+│   └── fonts/          # Tipografía Nasalization
+├── snapshots/          # Capturas de pantalla para la entrega solicitadas en la guia
 └── src/
     ├── main.jsx            # Punto de entrada; importa Bootstrap (CSS y JS)
     ├── App.jsx             # Componente raíz: estados y orquestación
