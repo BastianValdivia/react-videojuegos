@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/react-videojuegos/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tienda de videojuegos retro con productos destacados y novedades del mundo gamer clásico."
+    />
+    <title>Bastian-RetroZone - Tienda de Videojuegos Retro</title>
+
+    <!--
+      El @font-face va acá, como estilo inline, y no en index.css,
+      porque /react-videojuegos/ solo se resuelve dentro de index.html (en
+      local vale "/", en producción vale el "base" configurado en
+      vite.config.js). Así la fuente carga bien tanto en local como
+      una vez publicada en la subcarpeta de GitHub Pages.
+    -->
+    <style>@font-face{font-family:Nasalization;src:url(/react-videojuegos/fonts/nasalization-rg.otf)format("opentype");font-weight:400;font-style:normal;font-display:swap}</style>
+    <script type="module" crossorigin src="/react-videojuegos/assets/index-D1_p7uQS.js"></script>
+    <link rel="stylesheet" crossorigin href="/react-videojuegos/assets/index-CO5x2SJn.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

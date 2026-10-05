@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Super Mario 64",
+    "consola": "N64",
+    "precio": 19990,
+    "imagen": "img/m64.png",
+    "descripcion": "El clásico platformer 3D de Nintendo 64 que revolucionó los videojuegos de plataformas con su mundo abierto."
+  },
+  {
+    "id": 2,
+    "nombre": "Crash Bandicoot",
+    "consola": "PS1",
+    "precio": 17990,
+    "imagen": "img/crash.png",
+    "descripcion": "Acompaña a Crash en su aventura de plataformas para PlayStation, esquivando trampas y derrotando al Dr. Neo Cortex."
+  },
+  {
+    "id": 3,
+    "nombre": "Sonic the Hedgehog 2",
+    "consola": "GENESIS",
+    "precio": 14990,
+    "imagen": "img/sonic2.png",
+    "descripcion": "Corre a toda velocidad con Sonic y Tails en esta clásica aventura de Sega Genesis llena de anillos y aventuras."
+  },
+  {
+    "id": 4,
+    "nombre": "Super Mario World",
+    "consola": "SNES",
+    "precio": 16990,
+    "imagen": "img/smw.png",
+    "descripcion": "Explora el Mundo Champiñón junto a Mario y Yoshi en esta joya de plataformas de Super Nintendo."
+  },
+  {
+    "id": 5,
+    "nombre": "Tetris",
+    "consola": "GAME BOY",
+    "precio": 9990,
+    "imagen": "img/tetris.png",
+    "descripcion": "El rompecabezas más adictivo de todos los tiempos, ahora portátil en la clásica Game Boy."
+  },
+  {
+    "id": 6,
+    "nombre": "Crazy Taxi",
+    "consola": "DREAMCAST",
+    "precio": 18990,
+    "imagen": "img/crazytaxi.png",
+    "descripcion": "Recorre la ciudad a toda velocidad recogiendo pasajeros en este arcade clásico de Sega Dreamcast."
+  }
+]
