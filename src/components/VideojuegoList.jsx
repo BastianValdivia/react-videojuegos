@@ -4,10 +4,6 @@
  * "onAgregar" (prop) que App.jsx le pasa para poder avisarle cuando
  * el usuario agrega un producto al carrito, y "idsEnCarrito" (prop),
  * el arreglo de ids que ya están en el carrito.
- *
- * Usa .map() para recorrer el arreglo, que es el equivalente en React
- * de *ngFor en Angular. Cada tarjeta necesita una prop "key" única
- * (usamos el id del producto) para que React identifique cada fila.
  */
 function VideojuegoList({ productos, onAgregar, idsEnCarrito }) {
   // Renderizado condicional: si no hay resultados (catálogo vacío o

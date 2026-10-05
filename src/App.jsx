@@ -31,19 +31,8 @@ function App() {
   const [textoBotonComprar, setTextoBotonComprar] = useState('Comprar');
 
   // useEffect con arreglo de dependencias vacío ([]): se ejecuta una
-  // sola vez, cuando App se monta por primera vez. Es el equivalente
-  // a ngOnInit en Angular. Aquí simulamos la carga de datos desde una
-  // fuente externa usando fetch sobre el archivo JSON local.
-  //
-  // El archivo vive en public/data/productos.json. Todo lo que está
-  // en public/ lo sirve Vite tal cual, sin procesarlo, por eso esta
-  // es una petición de red real (igual que en el lab 6), y no una
-  // dependencia que Vite necesite resolver al compilar.
-  //
-  // import.meta.env.BASE_URL: en local vale "/", y en producción vale
-  // lo que se haya puesto en "base" dentro de vite.config.js (en este
-  // proyecto, la subcarpeta donde se publica en GitHub Pages). Usarla
-  // acá evita escribir la ruta "a mano" y que se rompa al desplegar.
+  // sola vez, cuando App se monta por primera vez.
+
   useEffect(() => {
     async function cargarProductos() {
       try {

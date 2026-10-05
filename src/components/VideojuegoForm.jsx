@@ -7,8 +7,7 @@ import { useState } from 'react';
  * filtra el catálogo por nombre o consola, igual que en el lab 6.
  *
  * El valor del input se controla con su propio useState local: así
- * el input siempre refleja el estado de React (input controlado),
- * el equivalente a [(ngModel)] en Angular pero manejado a mano.
+ * el input siempre refleja el estado de React (input controlado)
  *
  * Props:
  *  - onBuscar: función que App.jsx pasa para recibir el término
